@@ -12,13 +12,18 @@ import appointmentRouter from "./router/appointmentRouter.js";
 const app = express();
 config({ path: "./config.env" });
 
-const allowedOrigins = [
-  "https://hospital-managment-sandy.vercel.app",
-  "https://hospital-managment-admin.vercel.app",
-  "https://hospital-managment-api.vercel.app",
-];
+// const allowedOrigins = [
+//   "https://hospital-managment-sandy.vercel.app",
+//   "https://hospital-managment-admin.vercel.app",
+//   "https://hospital-managment-api.vercel.app",
+// ];
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+  })
+);
 
 app.use(cookieParser());
 app.use(express.json());
