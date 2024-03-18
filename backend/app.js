@@ -18,18 +18,7 @@ const allowedOrigins = [
   "https://hospital-managment-api.vercel.app",
 ];
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true, // Enable credentials (cookies)
-  })
-);
+app.use(cors());
 
 app.use(cookieParser());
 app.use(express.json());
