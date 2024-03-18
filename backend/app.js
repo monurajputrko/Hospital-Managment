@@ -15,6 +15,7 @@ config({ path: "./config.env" });
 const allowedOrigins = [
   "https://hospital-managment-sandy.vercel.app",
   "https://hospital-managment-admin.vercel.app",
+  "https://hospital-managment-api.vercel.app",
 ];
 
 app.use(
