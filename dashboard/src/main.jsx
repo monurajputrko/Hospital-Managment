@@ -5,7 +5,7 @@ import App from "./App.jsx";
 export const Context = createContext({ isAuthenticated: false });
 
 const AppWrapper = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
   const [admin, setAdmin] = useState({});
 
   return (
