@@ -22,7 +22,7 @@ const AddNewAdmin = () => {
     try {
       await axios
         .post(
-          "https://hospital-managment-api.vercel.app/api/v1/user/admin/addnew",
+          "https://hospital-managment-m0vm.onrender.com/api/v1/user/admin/addnew",
           { firstName, lastName, email, phone, dob, gender, password },
           {
             withCredentials: true,
