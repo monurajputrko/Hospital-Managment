@@ -22,9 +22,9 @@ const Doctors = () => {
     fetchDoctors();
   }, []);
 
-  // if (!isAuthenticated) {
-  //   return <Navigate to={"/login"} />;
-  // }
+  if (!isAuthenticated) {
+    return <Navigate to={"/login"} />;
+  }
   return (
     <section className="page doctors">
       <h1>DOCTORS</h1>
