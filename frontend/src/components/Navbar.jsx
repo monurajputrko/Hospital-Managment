@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("https://hospital-managment-api.vercel.app/api/v1/user/patient/logout", {
+      .get("https://hospital-managment-m0vm.onrender.com/api/v1/user/patient/logout", {
         withCredentials: true,
       })
       .then((res) => {
