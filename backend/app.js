@@ -20,7 +20,7 @@ config({ path: "./config.env" });
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://hospital-managment-sandy.vercel.app/",
     credentials: true,
   })
 );
